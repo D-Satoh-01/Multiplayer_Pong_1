@@ -295,7 +295,48 @@ function move_player(){
 function switchDisplayLayout(){
     if (window.matchMedia('(max-width: 780px)').matches){
         document.getElementById('buttons').style.display = 'block';
+
+        let display = document.getElementById('screen');
+        display.style.display = 'block';
+        display.style.width = '100%';
+        display.style.height = '100%';
+        display.style.margin = '0';
+        display.style.padding = '0';
     } else {
         document.getElementById('buttons').style.display = 'none';
     }
+}
+
+
+
+function touchSpace(){
+    socket.emit('press_space_from_client');
+}
+
+function touchLeft(){
+    player_move_flag_left = true;
+}
+function untouchLeft(){
+    player_move_flag_left = false;
+}
+
+function touchRight(){
+    player_move_flag_right = true;
+}
+function untouchRight(){
+    player_move_flag_right = false;
+}
+
+function touchUp(){
+    player_move_flag_up = true;
+}
+function untouchUp(){
+    player_move_flag_up = false;
+}
+
+function touchDown(){
+    player_move_flag_down = true;
+}
+function untouchDown(){
+    player_move_flag_down = false;
 }
