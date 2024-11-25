@@ -14,11 +14,13 @@
     .area_1 {
         text-align: center;
         flex-flow: column;
+        user-select: none;
     }
 
     .container_1 {
         width: 100%;
         text-align: center;
+        user-select: none;
     }
 
     .container_2 {
@@ -63,12 +65,12 @@
         <button class="btn1" onmousedown="touchSpace()">［ SPACE ］</button>
         <div class="container_4">
             <div class="container_2">
-                <button class="btn2" id="buttonUp" onmousedown="touchUp()" onmouseup="untouchUp()">▲​</button>
-                <button class="btn2" id="buttonDown" onmousedown="touchDown()" onmouseup="untouchDown()">▼​</button>
+                <button class="btn2" id="buttonUp">▲​</button>
+                <button class="btn2" id="buttonDown">▼​</button>
             </div>
             <div class="container_3">
-                <button class="btn3" id="buttonLeft" onmousedown="touchLeft()" onmouseup="untouchLeft()">◀</button>
-                <button class="btn3" id="buttonRight" onmousedown="touchRight()" onmouseup="untouchRight()">▶</button>
+                <button class="btn3" id="buttonLeft">◀</button>
+                <button class="btn3" id="buttonRight">▶</button>
             </div>
         </div>
     </div>

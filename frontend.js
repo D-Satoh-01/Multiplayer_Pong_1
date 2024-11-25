@@ -137,7 +137,6 @@ function mainLoop(){
         draw();
         move_player_input();
         move_player();
-        
     }
 
     // ループさせる
@@ -307,6 +306,15 @@ function switchDisplayLayout(){
     }
 }
 
+
+document.getElementById('buttonLeft').addEventListener('touchstart', touchLeft);
+document.getElementById('buttonLeft').addEventListener('touchend', untouchLeft);
+document.getElementById('buttonRight').addEventListener('touchstart', touchRight);
+document.getElementById('buttonRight').addEventListener('touchend', untouchRight);
+document.getElementById('buttonUp').addEventListener('touchstart', touchUp);
+document.getElementById('buttonUp').addEventListener('touchend', untouchUp);
+document.getElementById('buttonDown').addEventListener('touchstart', touchDown);
+document.getElementById('buttonDown').addEventListener('touchend', untouchDown);
 
 
 function touchSpace(){
