@@ -348,3 +348,8 @@ function touchDown(){
 function untouchDown(){
     player_move_flag_down = false;
 }
+
+// 要素選択の禁止
+document.onselectstart = function() {
+    return false;
+  }
